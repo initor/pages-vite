@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.vercel/
+.env*
+*.local
+*.log
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.playwright-mcp/

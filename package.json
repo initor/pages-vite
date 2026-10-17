@@ -1,0 +1,20 @@
+{
+  "name": "pages-vite",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.4.3",
+  "scripts": {
+    "build": "bun scripts/build.ts",
+    "check": "bun scripts/check.ts",
+    "new-page": "bun scripts/new-page.ts",
+    "preview": "bun scripts/preview.ts",
+    "lint": "oxlint scripts",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test scripts"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.3",
+    "oxlint": "^1.88.0",
+    "typescript": "~6.0.2"
+  }
+}

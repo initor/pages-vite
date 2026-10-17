@@ -1,0 +1,22 @@
+version: 2
+updates:
+  # One grouped PR per directory per month: each page upgrades on its own
+  # schedule, and a page's bump can never move another page's lockfile.
+  - package-ecosystem: bun
+    directories:
+      - /
+      - /templates/*
+      - /pages/*
+    schedule:
+      interval: monthly
+    groups:
+      all:
+        patterns: ["*"]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    groups:
+      all:
+        patterns: ["*"]
