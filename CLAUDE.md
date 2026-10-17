@@ -7,9 +7,9 @@ changing anything outside a single page.
 
 ## Stack
 
-- Bun is the package manager and script runner (version pinned in
-  `package.json` `packageManager` and in `vercel.json`; keep both equal, a test
-  enforces it). No npm, pnpm, tsx, or ts-node.
+- Bun is the package manager and script runner. CI pins it via `package.json`
+  `packageManager`; Vercel picks its Bun from the `bun.lock` format. No npm,
+  pnpm, tsx, or ts-node.
 - Repo tooling: TypeScript in `scripts/`, tests with `bun test`, lint with oxlint.
 - Default page template: Vite 8 + React 19 + TypeScript + Tailwind CSS v4 +
   oxlint (`templates/vite-react`).
