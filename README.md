@@ -37,7 +37,7 @@ pages/<slug>/       one self-contained page per directory; name = URL path
 templates/          starting points for new pages (built in CI so they stay green)
 site/               files served at the root of the domain (404.html)
 scripts/            build, check, scaffold, preview (Bun + TypeScript)
-vercel.json         routing, headers, pinned build commands
+vercel.json         routing, headers, build commands
 docs/               architecture and decisions
 ```
 

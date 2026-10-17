@@ -14,6 +14,7 @@ import { bun, runMain } from './lib/proc.ts'
 const OUT = join(ROOT, 'dist')
 
 runMain(async () => {
+  console.log(`bun ${Bun.version}`)
   const pages = selectPages(await discoverPages(), process.argv.slice(2))
   await rm(OUT, { recursive: true, force: true })
   await cp(join(ROOT, 'site'), OUT, { recursive: true })
